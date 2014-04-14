@@ -24,5 +24,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/home/rmarzochi/Projetos/FoodOfficeSP/Code/LibsGeneric/xdoclet-1.2.1/xdoclet-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/rmarzochi/Projetos/FoodOfficeSP/Code/LibsGeneric/xjavadoc-1.0.3/xjavadoc-1.0.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
