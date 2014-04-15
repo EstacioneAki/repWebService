@@ -14,9 +14,9 @@ public class LocalizacaoService {
 	}
 	
 	@GET
-	@Path("/getLocalizacao/")
-	@Produces(MediaType.APPLICATION_XML)
-	@Consumes("application/xml")
+	@Path("/getLocalizacao")
+	@Produces("text/html")
+	@Consumes("text/html")
 	public String getLatitudeLongitude(){
 		return "Sucesso";
 	}
