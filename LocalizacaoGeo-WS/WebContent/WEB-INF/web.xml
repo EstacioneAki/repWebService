@@ -5,10 +5,6 @@
   
 	    <servlet-name>ESTACIONEAKIWS</servlet-name>
 	    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-	    <init-param>      
-		    <param-name>com.sun.jersey.config.property.packages</param-name>
-		    <param-value>com.usp.localizacao.service</param-value>
-		</init-param>
 	   	<load-on-startup>1</load-on-startup>
   	</servlet>
   
@@ -17,4 +13,20 @@
     <servlet-name>ESTACIONEAKIWS</servlet-name>
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
+  
+  
+  <context-param>
+    <param-name>resteasy.scan</param-name>
+    <param-value>false</param-value>
+</context-param>
+<context-param>
+    <param-name>resteasy.scan.providers</param-name>
+    <param-value>false</param-value>
+</context-param>
+<context-param>
+    <param-name>resteasy.scan.resources</param-name>
+    <param-value>false</param-value>
+</context-param>
+  
+  
 </web-app>
