@@ -8,7 +8,9 @@
 	<packaging>war</packaging>
 	<name>LocalizacaoGeo-WS</name>
 	
-	<build>
+	
+	
+<!--  	
 	<plugins>
 	<plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -19,6 +21,7 @@
 	</plugin>
 	</plugins>
 	</build>
+	-->
   <dependencies>
 
 	<dependency>
@@ -39,27 +42,27 @@
 	<version>2.5</version>
 	<scope>provided</scope>
   	</dependency>
-  	
-	
-	<!--  
-	<dependency>
-		<groupId>org.jvnet.mimepull</groupId>
-		<artifactId>mimepull</artifactId>
-		<version>1.8</version>
-	</dependency>
-	
-	<dependency>
-		<groupId>com.sun.jersey.contribs</groupId>
-		<artifactId>jersey-multipart</artifactId>
-		<version>1.8</version>
-	</dependency>
-	
-	<dependency>
-		<groupId>com.sun.jersey</groupId>
-		<artifactId>jersey-json</artifactId>
-		<version>1.17.1</version>
-	</dependency>
-            	
-          -->  
   </dependencies>
+
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-war-plugin</artifactId>
+  			<configuration>
+				<webXml>..\LocalizacaoGeo-WS\WebContent\WEB-INF\web.xml</webXml>
+			</configuration>
+			<executions>
+          		<execution>
+            		<id>attach-sources</id>
+            		<phase>package</phase>
+            		<goals>
+              			<goal>war</goal>
+            		</goals>
+          		</execution>
+        	</executions>
+  		</plugin>
+
+  	</plugins>
+  </build>
 </project>
