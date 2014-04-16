@@ -18,7 +18,7 @@ public class LocalizacaoService extends HttpServlet{
 	@Produces("text/html")
 	@Consumes("text/html")
 	public String getLatitudeLongitude(){
-		return "Sucesso";
+		return "-23.4871494 | -47.4577477 ";
 	}
 	
 
