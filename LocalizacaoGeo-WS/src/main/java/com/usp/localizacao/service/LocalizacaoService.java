@@ -18,7 +18,7 @@ public class LocalizacaoService extends HttpServlet{
 	@Produces("text/html")
 	@Consumes("text/html")
 	public String getLatitudeLongitude(){
-		return "-23.4871494 | -47.4577477 ";
+		return "-23.4871494 | -47.45774777";
 	}
 	
 
